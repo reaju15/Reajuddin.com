@@ -1,0 +1,298 @@
+
+/*
+Awesome Lea Verou's Heart Pattern Background
+---- */
+/*Amazing Original Code fron Angela Velasquez
+Thanks! Here is here pen:https://codepen.io/AngelaVelasquez/pen/bEzYqb*/
+/* Think this is cool? Check out my other stuff: http://yjangwynter.com*/
+body {
+	background: 
+radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%),
+			/* Pink Hearts */
+radial-gradient(circle closest-side at 40% 22%, #27E8CB 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 60% 22%, #27E8CB 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 50% 35%,  #27E8CB 30%, rgba(221,51,85,0) 31%),
+
+radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
+		/* Grey Hearts */
+radial-gradient(circle closest-side at 40% 22%, #777777 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 60% 22%, #777777 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 50% 35%, #777777 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color:#323232;
+	background-size:100px 100px;
+	font-family: 'Lato', sans-serif;
+}
+
+/*
+Valentine's Pen
+---- */
+
+.centered {
+	width: 100%;
+	margin: 30vh auto;
+	text-align: center;
+}
+
+.centered h4 {
+	color:  #B40800;
+	font-size: 4em;
+	font-weight: bold;
+}
+.centered h5{
+	color: #FFFFFF;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+ input[type=checkbox]{
+  display:none;
+ }
+
+label {
+	height: 40px;
+	width: auto;
+	padding: 10px 40px;
+	display: inline-block; 
+	cursor: pointer;
+	margin: 0 20px;
+	border-radius: 5px;
+	color: #FFFFFF;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	transition: all .25s ease-in-out;
+}
+
+label:hover {
+	transform: 	scale(1.1,1.1);
+}
+
+.no {
+	background-color: #D8124B;
+}
+
+
+
+.yes {
+	background-color: #17DE09;
+}
+
+.answer--yes, .answer--no {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .5s ease-in-out;
+}
+
+.answer--yes {
+	background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2J2cWJkeDBuY3VjcjJ4NjF0NWFhdHhxNWJ4d2p0ZzQ3dGJyOXpwcyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kDWqirX6dEHvi83pn2/giphy.gif');
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+
+.answer--no {
+	background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3N2djJvZHg3NjRyMmd2YjA3MWE0c3BmdWwxenJjNGpiamZsMW9zMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/XNX9uw7fykn5e/giphy.gif');
+	background-repeat:no-repeat;
+	margin-left: 50px;
+  background-size: 45em;
+
+}
+
+input.yes[type=checkbox]:checked ~ .answer--yes {
+  visibility: visible;
+	opacity: 100;
+}
+
+input.no[type=checkbox]:checked ~ .answer--no {
+  visibility: visible;
+	opacity: 100;
+}
+
+/*
+Signature
+---- */
+
+.signature {
+	position: absolute;
+	margin-top: 30%;
+	bottom: 0;
+	left:3vw;
+	width: 95%;
+
+}
+
+.signature p{
+	margin-top:10px;
+	text-align: center;
+	
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 1em;
+	color: #FFFFFF;
+}
+
+.signature .much-heart{
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	background: #FF84C4;
+	border-radius: 4px;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before, 
+.signature .much-heart::after {
+	  display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #FF84C4;
+  top: -4px;
+}
+
+.signature .much-heart::after {
+	bottom: 0;
+	top: auto;
+	left: -4px;
+}
+
+.signature a {
+	color:#FF84C4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.signature a:hover {
+	color: coral;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+
+/* CSS Heart */
+.heart{
+  position: relative;
+  width: 200px;
+	top:100px;
+	left:44vw;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: rgba(188, 143, 143, 1);
+	   animation-name: rainbow-bottom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 1600px){
+	.heart{
+		left:40vw;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.heart{
+		left:36vw;
+	}
+}
+@media only screen and (max-width: 500px){
+	.heart{
+		left:24vw;
+		width:200px;
+		height:200px;
+	}
+}
+
+.heart::after {
+   background-color: rgba(188, 143, 143, 1);
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  left: -100px;
+		   animation-name: rainbow-left;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.heart::before {
+  content:'';
+   background-color: rgba(188, 143, 143, 1);
+  border-radius: 50%;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -100px;
+  left: 0px;
+		   animation-name: rainbow-right;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* CSS Heart Animations */
+@keyframes rainbow-bottom{
+	0%{
+		background-color: #FF84C4;
+	}
+	25%{
+		background-color:#924DE8;
+	}
+	50%{
+		background-color:#1E6EFF;
+	}
+	75%{
+		background-color:#27E8CB;
+	}
+100%{
+			background-color:#2EFF2E;
+		}
+}
+@keyframes rainbow-left{
+	0%{
+		background-color: #FF84C4;
+	}
+	25%{
+		background-color:#924DE8;
+	}
+	50%{
+		background-color:#1E6EFF;
+	}
+	75%{
+		background-color:#27E8CB;
+	}
+100%{
+			background-color:#2EFF2E;
+		}
+}
+@keyframes rainbow-right{
+	0%{
+		background-color: #FF84C4;
+	}
+	25%{
+		background-color:#924DE8;
+	}
+	50%{
+		background-color:#1E6EFF;
+	}
+	75%{
+		background-color:#27E8CB;
+	}
+100%{
+			background-color:#2EFF2E;
+		}
+}
